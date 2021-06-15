@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - env:
-          SUPER_SECRET: ${{ secrets.SuperSecret }}
+          SECRET: ${{ secrets.Secret }}
         run: |
           echo "The answer is $SECRET"
           OUTPUT=$SECRET
