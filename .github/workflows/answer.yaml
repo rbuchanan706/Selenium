@@ -11,3 +11,5 @@ jobs:
           SUPER_SECRET: ${{ secrets.SuperSecret }}
         run: |
           echo "The answer is $SECRET"
+          OUTPUT=$($SECRET + 0)
+          echo "${OUTPUT}"
