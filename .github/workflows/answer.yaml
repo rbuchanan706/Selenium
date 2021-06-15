@@ -1,4 +1,4 @@
-name: Manually triggered workflow
+name: Answers
 on:
   workflow_dispatch:
 
