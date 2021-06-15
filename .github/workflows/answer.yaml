@@ -11,5 +11,5 @@ jobs:
           SECRET: ${{ secrets.Secret }}
         run: |
           echo "The answer is $SECRET"
-          OUTPUT=$SECRET
+          OUTPUT=$((SECRET+0))
           echo "${OUTPUT}"
