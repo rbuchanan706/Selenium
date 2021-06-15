@@ -1,0 +1,13 @@
+name: Manually triggered workflow
+on:
+  workflow_dispatch:
+
+
+jobs:
+  answer:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          SUPER_SECRET: ${{ secrets.SuperSecret }}
+        run: |
+          echo "The answer is "$SECRET"
