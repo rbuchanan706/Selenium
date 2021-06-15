@@ -10,4 +10,4 @@ jobs:
       - env:
           SUPER_SECRET: ${{ secrets.SuperSecret }}
         run: |
-          echo "The answer is "$SECRET"
+          echo "The answer is $SECRET"
